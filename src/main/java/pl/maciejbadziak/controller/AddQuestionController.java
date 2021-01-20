@@ -18,7 +18,7 @@ public class AddQuestionController {
     public AddQuestionController(QuestionRepository questionRepository){
         this.questionRepository = questionRepository;
     }
-
+//Po co tu są dwie metody które robią dokładnie to samo ?
     @GetMapping
     public String add(Model model) {
         model.addAttribute("question", new Question());
